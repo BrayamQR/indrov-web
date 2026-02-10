@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import phoneImg from "../../assets/phone.png";
-import fondoImg from "../../assets/fondo.jpeg";
+import fondoImg from "../../assets/fondo.png";
 import cardheardImg from "../../assets/cardheard.png";
 import cardPhoneImg from "../../assets/cardphone.png";
 import cardPersonImg from "../../assets/cardperson.png";
@@ -25,7 +25,7 @@ const Home: React.FC = () => {
           <img
             src={fondoImg}
             alt="Persona usando la aplicación inDrov en un paisaje costero"
-            className="w-full h-full lg:h-auto object-cover"
+            className="w-full h-full object-cover object-[center_50%]"
           />
           {/* Overlay oscuro para mejorar legibilidad - más sutil */}
           <div className="absolute inset-0 bg-black/40"></div>
@@ -33,9 +33,9 @@ const Home: React.FC = () => {
 
         {/* Contenido */}
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 w-full">
-          <div className="max-w-4xl">
+          <div className="max-w-3xl">
             {/* Título principal */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
               {t("home.hero.title")}
             </h1>
 
